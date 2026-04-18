@@ -2,13 +2,34 @@
 
 `DocuLoom Prism` is a desktop AI-style document insight app that turns files into clear, presentation-ready charts. It accepts common business documents, extracts usable numeric data, supports linked image references, and exports polished PowerPoint decks that are ready to share.
 
+[![Latest Release](https://img.shields.io/github/v/release/ashvik-cs50/DocuLoomPrism?display_name=tag&style=for-the-badge&color=cb6d51)](https://github.com/ashvik-cs50/DocuLoomPrism/releases)
 [![Download Release](https://img.shields.io/badge/Download-Latest%20Release-1f6f63?style=for-the-badge)](https://github.com/ashvik-cs50/DocuLoomPrism/releases)
+[![Windows](https://img.shields.io/badge/Platform-Windows-0078D6?style=for-the-badge)](https://github.com/ashvik-cs50/DocuLoomPrism/releases)
+[![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge)](https://www.python.org/)
+[![Build](https://img.shields.io/github/actions/workflow/status/ashvik-cs50/DocuLoomPrism/build-windows.yml?style=for-the-badge&label=Build)](https://github.com/ashvik-cs50/DocuLoomPrism/actions/workflows/build-windows.yml)
+[![Repo Stars](https://img.shields.io/github/stars/ashvik-cs50/DocuLoomPrism?style=for-the-badge&color=f4b400)](https://github.com/ashvik-cs50/DocuLoomPrism/stargazers)
+[![License](https://img.shields.io/badge/License-Add%20One%20Later-6f42c1?style=for-the-badge)](https://github.com/ashvik-cs50/DocuLoomPrism)
 
 ## Download
 
 Want the compiled app instead of running from source?
 
 [Download the latest release from GitHub](https://github.com/ashvik-cs50/DocuLoomPrism/releases)
+
+Quick links:
+
+- [Latest Releases](https://github.com/ashvik-cs50/DocuLoomPrism/releases)
+- [Windows Build Workflow](https://github.com/ashvik-cs50/DocuLoomPrism/actions/workflows/build-windows.yml)
+- [Source Code](https://github.com/ashvik-cs50/DocuLoomPrism)
+
+## Get The App
+
+- Want the ready-to-use version?
+  Download the `.exe` from the [Releases page](https://github.com/ashvik-cs50/DocuLoomPrism/releases).
+- Want to test the newest build before a release is published?
+  Open the [Actions workflow](https://github.com/ashvik-cs50/DocuLoomPrism/actions/workflows/build-windows.yml) and download the latest Windows artifact.
+- Want to run from source?
+  Clone the repo and run `python doculoom_prism.py`.
 
 ## Why It Feels Product-Ready
 

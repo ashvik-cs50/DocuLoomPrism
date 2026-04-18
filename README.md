@@ -2,6 +2,14 @@
 
 `DocuLoom Prism` is a desktop AI-style document insight app that turns files into clear, presentation-ready charts. It accepts common business documents, extracts usable numeric data, supports linked image references, and exports polished PowerPoint decks that are ready to share.
 
+[![Download Release](https://img.shields.io/badge/Download-Latest%20Release-1f6f63?style=for-the-badge)](https://github.com/ashvik-cs50/DocuLoomPrism/releases)
+
+## Download
+
+Want the compiled app instead of running from source?
+
+[Download the latest release from GitHub](https://github.com/ashvik-cs50/DocuLoomPrism/releases)
+
 ## Why It Feels Product-Ready
 
 - Unique app branding with a stronger public-facing name

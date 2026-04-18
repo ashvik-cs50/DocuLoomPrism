@@ -1,68 +1,118 @@
-# Document Graph Studio
+# DocuLoom Prism
 
-`Document Graph Studio` is a desktop Python app that reads files like `PDF`, `Word`, `Excel`, `PowerPoint`, `CSV`, and `TXT`, extracts numeric data, and turns it into clear graphs through a simple Tkinter interface.
+`DocuLoom Prism` is a desktop AI-style document insight app that turns files into clear, presentation-ready charts. It accepts common business documents, extracts usable numeric data, supports linked image references, and exports polished PowerPoint decks that are ready to share.
 
-The UI is built for quick use:
+## Why It Feels Product-Ready
 
-- upload a document
-- choose the detected dataset
-- choose a numeric column
-- pick a graph style from a dropdown
-- generate a labeled chart with clear topic numbering
+- Unique app branding with a stronger public-facing name
+- Desktop UI designed for demos, publishing, and GitHub presentation
+- Support for `PDF`, `DOCX`, `XLSX`, `XLS`, `XLSM`, `PPTX`, `CSV`, and `TXT`
+- Optional URL fetching for direct images and supported document files
+- Graph generation with topic labels, numbering, and readable titles
+- PowerPoint export with chart slides, summary slides, and linked-image slides
+- Automatic Windows executable build pipeline for GitHub Actions
+- Logo-ready setup for your `prizm.ico` file and future `logo.png`
 
-## Features
+## Product Flow
 
-- Supports `CSV`, `XLSX`, `XLS`, `XLSM`, `PDF`, `DOCX`, `PPTX`, and `TXT`
-- Detects tables and simple label-value pairs inside documents
-- Lets the user choose graph type from a dropdown menu
-- Generates `Bar`, `Line`, `Horizontal Bar`, `Area`, `Scatter`, `Pie`, and `Histogram` charts
-- Adds clear chart titles, topic labels, and numbered items for readability
-- Shows a data preview beside the graph output
+1. Open a document.
+2. Let the app detect chart-ready data.
+3. Choose a dataset and numeric value column.
+4. Select a graph type from the dropdown.
+5. Optionally fetch an image or supported document from a direct URL.
+6. Generate a polished graph.
+7. Export a presentation-ready PowerPoint.
 
-## Project Files
+## Supported Charts
 
-- `document_graph_studio.py`: main desktop application
-- `requirements.txt`: Python dependencies
-- `.gitignore`: common Python and editor ignores for GitHub
+- Bar Chart
+- Line Chart
+- Horizontal Bar Chart
+- Area Chart
+- Scatter Plot
+- Pie Chart
+- Histogram
 
-## Installation
+## Repository Structure
 
-1. Create and activate a virtual environment.
-2. Install dependencies:
+- `doculoom_prism.py`: main desktop application
+- `requirements.txt`: runtime dependencies
+- `build_requirements.txt`: packaging dependency for compiled builds
+- `build_release.ps1`: local Windows build script for `.exe` output
+- `BUILDING.md`: packaging and GitHub release instructions
+- `.github/workflows/build-windows.yml`: GitHub Actions build pipeline
+- `assets/README.md`: where to place your future logo files
+
+## Local Setup
 
 ```bash
 pip install -r requirements.txt
 ```
 
-## Run
+## Run The App
 
 ```bash
-python document_graph_studio.py
+python doculoom_prism.py
 ```
 
-If `python` is not available in your terminal on Windows, try:
+If `python` is not available in your terminal on Windows, use:
 
 ```bash
-py document_graph_studio.py
+py doculoom_prism.py
 ```
 
-## How It Works
+## Build A Downloadable Windows App
 
-1. Choose a supported file from the file picker.
-2. The app extracts chart-ready numeric data when possible.
-3. Select the dataset and value column you want to graph.
-4. Pick a chart type from the dropdown.
-5. Generate a graph with a clear title and numbered topics.
+Install build dependencies:
+
+```bash
+pip install -r build_requirements.txt
+```
+
+Build the executable:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\build_release.ps1
+```
+
+Compiled output:
+
+```text
+dist/DocuLoomPrism.exe
+```
+
+## Add Your Logo Later
+
+When you are ready, place these files in `assets/`:
+
+- `prizm.ico`: used for the Windows `.exe`
+- `logo.png`: used for the app window icon when supported
+
+The app and build process already detect these automatically.
+
+## GitHub Download Story
+
+This repo now includes a GitHub Actions workflow that builds the Windows app automatically on `main` or `master`, and also supports manual workflow runs.
+
+That means people can:
+
+- open the repository on GitHub
+- trigger or inspect the workflow
+- download the compiled Windows artifact
+- later download a release build once you upload the `.exe` to GitHub Releases
 
 ## Notes
 
-- `PDF`, `DOCX`, and `PPTX` files work best when they contain tables or obvious label-value pairs.
+- `PDF`, `DOCX`, and `PPTX` work best when the file contains tables or obvious label-value pairs.
+- URL fetching works best with direct file links, not general web pages.
 - `Pie Chart` requires values greater than zero.
-- Large datasets are limited for some chart types so labels stay readable.
+- Larger datasets are trimmed for some chart types so labels stay clean and readable.
 
-## GitHub Ready Checklist
+## Ready For Next Steps
 
-- Focused single-purpose app
-- Clean dependency list
-- Python `.gitignore`
-- Updated README for installation and usage
+This project is now set up for:
+
+- branding with your future logo
+- local `.exe` builds
+- GitHub-hosted build artifacts
+- a more publishable product presentation

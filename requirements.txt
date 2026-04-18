@@ -1,6 +1,7 @@
 pandas
 matplotlib
 openpyxl
+pillow
 python-docx
 python-pptx
 pypdf

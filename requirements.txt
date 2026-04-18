@@ -1,0 +1,7 @@
+pandas
+matplotlib
+openpyxl
+python-docx
+python-pptx
+pypdf
+xlrd
